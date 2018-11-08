@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+</head>
+<body>
+    <section id="row" class="row">
+        <ul class="list">
+            <li class="item front">1</li>
+            <li class="item back">2</li>
+            <li class="item left">3</li>
+            <li class="item right">4</li>
+            <li class="item top">5</li>
+            <li class="item bottom">6</li>
+        </ul>
+    </section>
+</body>
+<script src="./index.js"></script>
+<script>
+    new M_touchMove({
+        el: 'row',
+        child: 'list'
+    })
+</script>
+</html>
